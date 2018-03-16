@@ -50,3 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Add Project wise ignores, Create with make menuconfig
+
+# Folders to not add
+build
+.settings
+
+# Files to not add
+*.cproject
+*.project
+*.projbuild
