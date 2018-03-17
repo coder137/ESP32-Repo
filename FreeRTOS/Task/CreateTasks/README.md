@@ -1,14 +1,11 @@
-# Blink Example
+# CreateTasks Example
 
 Starts a FreeRTOS task to blink an LED
 
+Basic Implementation to create a Task and blink an LED in FreeRTOS
 
 ### Functions Used
 
-1. xTaskCreate API
+`xTaskCreate API`
 
-	Running a basic task
-
-2. xTaskDelete API
-	
-	Called to delete the task if it breaks out of its while loop
+`xTaskDelete API`

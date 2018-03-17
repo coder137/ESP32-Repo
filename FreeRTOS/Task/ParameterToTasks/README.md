@@ -1,5 +1,9 @@
-# Blink Example
+# ParameterToTasks Example
 
-Starts a FreeRTOS task to blink an LED
+Used the `xTaskCreate API` to pass a dynamic parameter inside a particular function
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
+Function can be called inside the function by calling `(void *) pvParameters`
+
+### Functions Used
+
+`xTaskCreate API`
