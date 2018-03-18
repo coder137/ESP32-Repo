@@ -62,5 +62,3 @@ build
 *.project
 *.projbuild
 *.mk
-sdkconfig.*
-sdkconfig
