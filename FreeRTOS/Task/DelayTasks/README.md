@@ -8,4 +8,6 @@ The API pdMS_TO_TICKS converts a duration to time into Tick period that are unde
 
 `pdMS_TO_TICKS() API`
 
+`vTaskDelay() API`
+
 NOTE: Will only work if the Tick Duration is lesser than 1000HZ or 1KHZ
