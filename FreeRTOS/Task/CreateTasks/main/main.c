@@ -5,7 +5,16 @@
 #include "sdkconfig.h"
 
 //This runs with D2 (Blue LED)
+//definitions
 #define BLINK_GPIO 2
+
+//functions used
+void blink_task(void *pvParameter);
+
+void app_main()
+{
+    xTaskCreate(&blink_task, "blink_task", configMINIMAL_STACK_SIZE, NULL, 5, NULL);
+}
 
 void blink_task(void *pvParameter)
 {
@@ -33,9 +42,4 @@ void blink_task(void *pvParameter)
 
     vTaskDelete(NULL); //Delete this task if it exits from the loop above
 
-}
-
-void app_main()
-{
-    xTaskCreate(&blink_task, "blink_task", configMINIMAL_STACK_SIZE, NULL, 5, NULL);
 }
