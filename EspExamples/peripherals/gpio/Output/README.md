@@ -1,5 +1,22 @@
-# Blink Example
+# Output Example
 
-Starts a FreeRTOS task to blink an LED
+Check the `gpio_output` function
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
+Configured pin GPIO2 as an `OUTPUT` pin
+
+### Functions used
+
+`gpio_config() API`
+
+`gpio_set_level() API`
+
+### Data types used
+
+`struct gpio_config_t`
+
+
+# Explanation
+
+`struct gpio_config_t` is set with appropriate parameters and passed to `gpio_config()`
+
+`gpio_set_level()` is used to toggle the LED On and OFF

@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := ParameterToTasks
+PROJECT_NAME := Output
 
 include $(IDF_PATH)/make/project.mk
