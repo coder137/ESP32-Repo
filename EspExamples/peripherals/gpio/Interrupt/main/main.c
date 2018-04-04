@@ -17,8 +17,8 @@ static int i=0;
 void gpio_output(void *pvParameters);
 static void IRAM_ATTR interrupt_task(void *arg);
 
-//TODO, Change the Project Name in Makefile
-//TODO, Test this with ESP32
+//DONE, Change the Project Name in Makefile
+//DONE, Test this with ESP32
 void app_main()
 {
 	gpio_config_t intrconfig;
