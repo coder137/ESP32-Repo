@@ -1,8 +1,14 @@
 # Peripherals
 
+- [ ] GPIO
+
 - [ ] ADC
 
+- [ ] DAC
+
 - [ ] PWM
+
+- [ ] TIMER
 
 # Communication Protocols
 
