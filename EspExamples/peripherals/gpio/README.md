@@ -1,9 +1,8 @@
 # GPIO
 
-- [ ] Output
+- [x] Output
 - [ ] Input
-- [ ] Interrupt
-
+- [x] Interrupt
 
 # Reference
 
