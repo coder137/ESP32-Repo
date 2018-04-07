@@ -1,5 +1,9 @@
 # Configurations
 
+**NOTE: Make sure in the `make menuconfig` you set Component Config -> FreeRTOS to -> Run on first core**
+
+> Added this in make menuconfig already
+
 1. blink
 	* Demo ESP-IDF Blink code modified slightly
 
