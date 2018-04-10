@@ -2,6 +2,6 @@
 
 - [x] BasicQueue
 - [x] StructQueue
-- [ ] PointerQueue
+- [x] PointerQueue
 - [ ] QueueSet
 - [ ] MailboxQueue
