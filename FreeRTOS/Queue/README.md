@@ -4,4 +4,4 @@
 - [x] StructQueue
 - [x] PointerQueue
 - [x] QueueSet
-- [ ] MailboxQueue
+- [x] MailboxQueue
