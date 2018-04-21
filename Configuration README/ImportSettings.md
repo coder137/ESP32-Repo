@@ -1,5 +1,7 @@
 ### My Configuration
 
+**NOTE: Use the README.md settings, This is EXPERIMENTAL**
+
 After configuring your `blink` build for the first time
 
 `Note: Look at the Top Level README`
