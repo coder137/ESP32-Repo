@@ -1,4 +1,6 @@
 # Timers
 
 - [x] BasicTimer
-- [ ] OverloadTimerFunction
+- [x] ChangeTimerID
+- [ ] ChangeTimerPeriod
+- [ ] ResetSoftwareTimer
