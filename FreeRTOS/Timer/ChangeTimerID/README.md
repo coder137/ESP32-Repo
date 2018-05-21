@@ -1,8 +1,8 @@
-# OverloadTimerFunction Example
+# ChangeTimerID Example
 
 Pass same timer function to different to *OneShotTimer* and *AutoReloadTimer* and perform different task with each
 
-This example also uses TimerId to perform tasks
+TimerID is changed of subsequent timers created in this example
 
 ### Functions used
 

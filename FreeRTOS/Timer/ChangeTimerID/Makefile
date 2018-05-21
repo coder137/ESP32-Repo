@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := OverloadTimerFunction
+PROJECT_NAME := ChangeTimerID
 
 include $(IDF_PATH)/make/project.mk
