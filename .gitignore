@@ -62,4 +62,4 @@ build
 *.cproject
 *.project
 *.projbuild
-# *.mk, NOTE: We need this file for compiling all our programs
+# *.mk, NOTE: We need this file for compiling all ot
