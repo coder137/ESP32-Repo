@@ -3,4 +3,4 @@
 - [x] BasicTimer
 - [x] ChangeTimerID
 - [x] ChangeTimerPeriod
-- [ ] ResetSoftwareTimer
+- [x] ResetSoftwareTimer

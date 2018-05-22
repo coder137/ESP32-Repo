@@ -22,15 +22,15 @@ Examples taken from the [FreeRTOS Books and Manauls](https://www.freertos.org/Do
 ### DONE
 
 1. Tasks
-2. Queues
+1. Queues
+1. Software Timers
 
 ### TODO
 
-1. Software Timers
-2. Interrupts
-3. Resources
-4. Event Groups
-5. Task Notifications
+1. Interrupts
+1. Resources
+1. Event Groups
+1. Task Notifications
 
 > Add more later
 
@@ -41,7 +41,7 @@ These are ESP32 specific examples
 ### TODO
 
 1. Peripherals
-2. BLE
-3. Wi-Fi
+1. BLE
+1. Wi-Fi
 
 > Add more later
