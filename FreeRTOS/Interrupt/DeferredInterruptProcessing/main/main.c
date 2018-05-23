@@ -19,15 +19,14 @@ const TickType_t xDelay250ms = pdMS_TO_TICKS(250);
 SemaphoreHandle_t xBinarySemaphore;
 static uint32_t i = 0;
 
-
 //Functions Created
 void blink_task(void *pvParameters);
 static void IRAM_ATTR interrupt_task(void *arg);
 
 void vInterruptHandler(void *ignore);
 
-//TODO, Change the Project Name in Makefile
-//TODO, Test this with ESP32
+//DONE, Change the Project Name in Makefile
+//DONE, Test this with ESP32
 void app_main()
 {
 	//DONE, Create the Binary Semaphore here
@@ -35,8 +34,6 @@ void app_main()
 
 	if(xBinarySemaphore != NULL)
 	{
-		printf("Created Semaphore\n");
-
 		gpio_config_t intrconfig;
 		intrconfig.pin_bit_mask = (1 << INTR_GPIO);
 		intrconfig.mode = GPIO_MODE_INPUT;
@@ -59,8 +56,6 @@ void app_main()
 		printf("Binary Semaphore not created\n");
 		printf("Program not init\n");
 	}
-
-
 }
 
 void blink_task(void *pvParameters)
@@ -99,13 +94,13 @@ static void IRAM_ATTR interrupt_task(void *arg)
 
 	xSemaphoreGiveFromISR(xBinarySemaphore, &xHigherPriorityTaskWoken);
 
-	//printf("xHigherPriorityTaskWoken: %d %s", xHigherPriorityTaskWoken, xHigherPriorityTaskWoken ? "True" : "False");
-	//DONE ? we need to add xHigherPriorityTaskWoken here
+	//CHECK, Not correlating with FreeRTOS Example
 	portYIELD_FROM_ISR();
 }
 
 /*
  * This function is used since we are deferring the `interrupt_task` to a FreeRTOS task
+ * Do some processing task inside this function
  */
 void vInterruptHandler(void *ignore)
 {
@@ -114,7 +109,6 @@ void vInterruptHandler(void *ignore)
 		//NOTE, since it is held by portMAX_DELAY this will never be false
 		if ( xSemaphoreTake(xBinarySemaphore, portMAX_DELAY) == pdTRUE)
 		{
-			//NOTE, Incrementing variable here
 			i++;
 			printf("Variable incremented: %" PRIu32 "\n", i);
 		}
