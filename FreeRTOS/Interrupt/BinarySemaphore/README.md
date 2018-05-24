@@ -1,4 +1,4 @@
-# DeferredInterruptProcessing Example
+# BinarySemaphore Example
 
 > Refer to *Esp32->Peripherals->gpio->Interrupt* example
 

@@ -22,7 +22,6 @@ static uint32_t i = 0;
 //Functions Created
 void blink_task(void *pvParameters);
 static void IRAM_ATTR interrupt_task(void *arg);
-
 void vInterruptHandler(void *ignore);
 
 //DONE, Change the Project Name in Makefile

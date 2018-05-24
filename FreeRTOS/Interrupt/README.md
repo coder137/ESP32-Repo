@@ -1,6 +1,6 @@
 # Interrupts
 
-- [x] DeferredInterruptProcessing
+- [x] BinarySemaphore
 - [ ] CountingSemaphore
 - [ ] CentralizedDeferredProcessing
 - [ ] QueueInterruptProcessing
