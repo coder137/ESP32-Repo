@@ -1,14 +1,29 @@
-# ESP32-Repo
+## ESP32-Repo
 
-Using ESP-IDF Build 11.03.18
+Using ESP-IDF Build 11.03.18 (MSYS2)
 
 **Updates: 04.08.2018**
 
-espressif have added a [new build system `cmake`](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/) to their compilation
+Espressif have added a [new build system `cmake`](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/) to their compilation
 
-# Getting Started with MySYS2
 
-### Default Configuration
+## Steps
+
+- [Getting Started with MSYS2](#getting-started-with-msys2)
+    - [Default Configuration](#default-configuration)
+- [Getting Started with CMAKE Build System](#getting-started-with-cmake-build-system)
+    - [Problems with Setting up `idf.py` with Windows](#problems-with-setting-up-idfpy-with-windows)
+        - [My Fix](#my-fix)
+- [FreeRTOS Examples](#freertos-examples)
+        - [DONE](#done)
+        - [TODO](#todo)
+- [ESP32 Examples](#esp32-examples)
+        - [TODO](#todo)
+
+
+# Getting Started with MSYS2
+
+## Default Configuration
 
 [Github Link for IDF Repository](https://github.com/espressif/esp-idf)
 
@@ -18,9 +33,9 @@ espressif have added a [new build system `cmake`](https://docs.espressif.com/pro
 
 # Getting Started with CMAKE Build System
 
-#### [Installing Toolchain and Getting Started](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/)
+[Installing Toolchain and Getting Started](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/)
 
-#### [Integrating with VSCode](https://github.com/Deous/VSC-Guide-for-esp32)
+[Integrating with VSCode](https://github.com/Deous/VSC-Guide-for-esp32)
 
 ## Problems with Setting up `idf.py` with Windows
 
@@ -34,7 +49,7 @@ both might not work
 
 ### My Fix
 
-- Goto %IDF_PATH%\tools
+- Goto `%IDF_PATH%\tools`
 - Open idf.py in your text editor
 - Change the first line
 
