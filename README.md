@@ -2,7 +2,11 @@
 
 Using ESP-IDF Build 11.03.18
 
-# Getting Started
+**Updates: 04.08.2018**
+
+espressif have added a [new build system `cmake`](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/) to their compilation
+
+# Getting Started with MySYS2
 
 ### Default Configuration
 
@@ -12,18 +16,54 @@ Using ESP-IDF Build 11.03.18
 
 * [Setting up the toolchain with Eclipse CDT for windows](https://esp-idf.readthedocs.io/en/v2.0/eclipse-setup-windows.html#eclipse-windows-setup)
 
+# Getting Started with CMAKE Build System
+
+#### [Installing Toolchain and Getting Started](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/)
+
+#### [Integrating with VSCode](https://github.com/Deous/VSC-Guide-for-esp32)
+
+## Problems with Setting up `idf.py` with Windows
+
+If Python3 has precedence over Python2 in Windows
+
+`py -2 idf.py`
+
+`C:\Python27\python.exe idf.py`
+
+both might not work
+
+### My Fix
+
+- Goto %IDF_PATH%\tools
+- Open idf.py in your text editor
+- Change the first line
+
+(Change this)
+`#!/usr/bin/env python`
+
+(To this)
+`#!/usr/bin/env python2` 
+
+- Go to `C:\Python27`
+- Change `python.exe` to `python2.exe`
+
+**Note: This still does not work with Windows Command Prompt**
+
+- Install `Git` for Windows and add it to PATH
+- Open `cmd` and type `sh` or `bash`
+- run `idf.py` and it should work (SUCCESS)
 
 # FreeRTOS Examples
 
 These examples work with the `ESP32 Devkit V1 board`
 
-Examples taken from the [FreeRTOS Books and Manauls](https://www.freertos.org/Documentation/RTOS_book.html)
+Examples taken from the [FreeRTOS Books and Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
 
 ### DONE
 
 1. Tasks
-1. Queues
-1. Software Timers
+2. Queues
+3. Software Timers
 
 ### TODO
 
