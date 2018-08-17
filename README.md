@@ -10,15 +10,15 @@ Espressif have added a [new build system `cmake`](https://docs.espressif.com/pro
 ## Steps
 
 - [Getting Started with MSYS2](#getting-started-with-msys2)
-    - [Default Configuration](#default-configuration)
+        - [Default Configuration](#default-configuration)
 - [Getting Started with CMAKE Build System](#getting-started-with-cmake-build-system)
-    - [Problems with Setting up `idf.py` with Windows](#problems-with-setting-up-idfpy-with-windows)
-        - [My Fix](#my-fix)
+        - [Problems with Setting up `idf.py` with Windows](#problems-with-setting-up-idfpy-with-windows)
+                - [My Fix](#my-fix)
 - [FreeRTOS Examples](#freertos-examples)
-        - [DONE](#done)
-        - [TODO](#todo)
+                - [DONE](#done)
+                - [TODO](#todo)
 - [ESP32 Examples](#esp32-examples)
-        - [TODO](#todo)
+                - [TODO](#todo)
 
 
 # Getting Started with MSYS2
@@ -45,7 +45,7 @@ If Python3 has precedence over Python2 in Windows
 
 `C:\Python27\python.exe idf.py`
 
-both might not work
+both might **NOT** work
 
 ### My Fix
 
