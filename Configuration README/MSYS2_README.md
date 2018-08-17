@@ -1,4 +1,4 @@
-# Configurations
+# MSYS2 Configurations
 
 Note: This is for the Windows operating system
 
