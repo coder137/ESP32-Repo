@@ -1,10 +1,6 @@
 # Interrupts
 
 - [x] BinarySemaphore
-- [ ] CountingSemaphore
-- [ ] CentralizedDeferredProcessing
+- [x] CountingSemaphore
+- [x] CentralizedDeferredProcessing
 - [ ] QueueInterruptProcessing
-
-### Notes
-
-1. `DeferredInterruptProcessing` uses Binary Semaphore
