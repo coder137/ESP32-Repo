@@ -3,4 +3,4 @@
 - [x] BinarySemaphore
 - [x] CountingSemaphore
 - [x] CentralizedDeferredProcessing
-- [ ] QueueInterruptProcessing
+- [x] QueueInterruptProcessing
