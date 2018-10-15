@@ -57,12 +57,13 @@ dkms.conf
 build
 .settings
 .tracecompass
+.vscode
 
 # Files to not add
 *.cproject
 *.project
 *.projbuild
-# *.mk, NOTE: We need this file for compiling all ot
+# *.mk, NOTE: We need this file for compiling ESP32 projects
 *.db
 *.db-shm
 *.db-wal

@@ -1,25 +1,15 @@
 ## ESP32-Repo
 
-Using ESP-IDF Build 11.03.18 (MSYS2)
+**Updated: 15.10.2018**
 
-**Updates: 04.08.2018**
-
-Espressif have added a [new build system `cmake`](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/) to their compilation
-
+Espressif have added a [new build system `cmake`](https://docs.espressif.com/projects/esp-idf/en/latest/get-started-cmake/index.html) to their compilation
 
 ## Steps
 
 - [Getting Started with MSYS2](#getting-started-with-msys2)
-        - [Default Configuration](#default-configuration)
+    - [Default Configuration](#default-configuration)
 - [Getting Started with CMAKE Build System](#getting-started-with-cmake-build-system)
-        - [Problems with Setting up `idf.py` with Windows](#problems-with-setting-up-idfpy-with-windows)
-                - [My Fix](#my-fix)
-- [FreeRTOS Examples](#freertos-examples)
-                - [DONE](#done)
-                - [TODO](#todo)
-- [ESP32 Examples](#esp32-examples)
-                - [TODO](#todo)
-
+- [Folder Structure](#folder-structure)
 
 # Getting Started with MSYS2
 
@@ -29,74 +19,27 @@ Espressif have added a [new build system `cmake`](https://docs.espressif.com/pro
 
 * [Setting up the toolchain for windows](https://esp-idf.readthedocs.io/en/latest/get-started/windows-setup.html)
 
-* [Setting up the toolchain with Eclipse CDT for windows](https://esp-idf.readthedocs.io/en/v2.0/eclipse-setup-windows.html#eclipse-windows-setup)
+* [Setting up the toolchain with Eclipse CDT for windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/eclipse-setup.html)
 
 # Getting Started with CMAKE Build System
 
-[Installing Toolchain and Getting Started](https://docs.espressif.com/projects/esp-idf/en/feature-cmake/get-started/)
+[Installing Toolchain and Getting Started](https://docs.espressif.com/projects/esp-idf/en/latest/get-started-cmake/index.html)
 
 [Integrating with VSCode](https://github.com/Deous/VSC-Guide-for-esp32)
 
-## Problems with Setting up `idf.py` with Windows
+**NOTE**
 
-If Python3 has precedence over Python2 in Windows
+`idf.py` has been updated. The previous issue of python3 preceding over python2 no longer affects idf.py functionality
 
-`py -2 idf.py`
+# Folder Structure
 
-`C:\Python27\python.exe idf.py`
-
-both might **NOT** work
-
-### My Fix
-
-- Goto `%IDF_PATH%\tools`
-- Open idf.py in your text editor
-- Change the first line
-
-(Change this)
-`#!/usr/bin/env python`
-
-(To this)
-`#!/usr/bin/env python2` 
-
-- Go to `C:\Python27`
-- Change `python.exe` to `python2.exe`
-
-**Note: This still does not work with Windows Command Prompt**
-
-- Install `Git` for Windows and add it to PATH
-- Open `cmd` and type `sh` or `bash`
-- run `idf.py` and it should work (SUCCESS)
-
-# FreeRTOS Examples
-
-These examples work with the `ESP32 Devkit V1 board`
-
-Examples taken from the [FreeRTOS Books and Manuals](https://www.freertos.org/Documentation/RTOS_book.html)
-
-### DONE
-
-1. Tasks
-2. Queues
-3. Software Timers
-
-### TODO
-
-1. Interrupts
-1. Resources
-1. Event Groups
-1. Task Notifications
-
-> Add more later
-
-# ESP32 Examples
-
-These are ESP32 specific examples
-
-### TODO
-
-1. Peripherals
-1. BLE
-1. Wi-Fi
-
-> Add more later
+- Arduino
+    - ESP32 Arduino Core
+- Esp32
+    - ESP32 IDF Core
+- FreeRTOS
+    - ESP32 FreeRTOS Examples
+- Configuration README
+    - Configuring your ESP32 environment
+- Project Configs
+    - `CMake` and `MSYS2` configured projects
